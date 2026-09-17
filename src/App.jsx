@@ -1,19 +1,25 @@
-import { RouterProvider } from "react-router/dom";
-import { createBrowserRouter } from "react-router";
-
+// src/App.jsx
+import { createBrowserRouter, RouterProvider } from "react-router";
+import MainLayout from "./layout/MainLayout";
+import Home from "./pages/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className="text-4xl font-bold">Hello World</div>,
-  },
+    element: <MainLayout></MainLayout>,
+    children:[
+      {
+        path:"/",
+      element: <Home />,
+      }
+    ]
+
+  }
+
 ]);
 
-function Router() {
-  return (
-      <RouterProvider router={router} /> 
-    )
-    
+function App() {
+  return <RouterProvider router={router} />;
 }
 
-export default Router; 
+export default App;
