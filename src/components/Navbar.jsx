@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function Navbar() {
   return (
-   <nav className="sticky top-0 z-30 bg-card border-b bg-blue-900">
+   <nav className="sticky top-0 z-30 bg-card border-b bg-blue-950">
       <div className="max-w-[1200px] mx-auto flex justify-between items-center px-4 h-16">
         <Link to="/" className="text-3xl font-bold text-primary"><span className="text-blue-500">Movie</span> <span className="text-white">Explorer</span></Link>
 
