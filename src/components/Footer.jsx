@@ -1,5 +1,8 @@
 import { Link } from "react-router";
-
+import { FaFacebook } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -11,10 +14,10 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-center items-center text-white gap-2">
-            <Link to="/">Github</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">twitter</Link>
-             <Link to="/">Youtube</Link>
+            <Link to="/"><FaGithub /></Link>
+            <Link to="/"><FaFacebook /></Link>
+            <Link to="/"><FaTwitter /></Link>
+             <Link to="/"><FaYoutube /></Link>
         </div>
  </div>
     </section>

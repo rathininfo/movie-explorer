@@ -9,14 +9,12 @@ export default function Navbar() {
 
         <div className="flex items-center gap-5 text-base text-white">
           <Link to="/" className="">Home</Link>
-          <Link to="/movies" className="">Movies</Link>
-          <Link to="/movies" className="">Tv Show</Link>
-          <Link to="/movies" className="">About</Link>
+          <Link to="/about" className="">About</Link>
           <Link
             to="/movies"
             className="bg-primary bg-blue-500 hover:bg-blue-400 text-white text-sm font-semibold px-4 py-2 rounded-lg"
           >
-            Browse Movies
+            Movies
           </Link>
         </div>
       </div>
